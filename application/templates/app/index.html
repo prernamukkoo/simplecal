@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="{% url 'result' %}" method="POST">
+        {% csrf_token %}
+        <input type="number"name="firstnumber">
+        <input type="number" name="secondnumber">
+        <button type="submit" value="1" name="calculate">add</button>
+        <button type="submit" value="2" name="calculate">sub</button>
+        <button type="submit" value="3" name="calculate">mul</button>
+        <button type="submit" value="4" name="calculate">div</button>
+        
+
+    </form>
+
+</body>
+</html>
